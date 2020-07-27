@@ -12,27 +12,27 @@ The first number in each set represents the number of rows to be affected. The s
 
 For example, the first set is `1 4`, which is 1 row and 4 columns. Increment each column, in the first row, by 1.
 
-| 0 | 0 | 0 | 0
-|---|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| --- | --- | --- | --- |
 | **0** | **0** | **0** | **0** |
 | **0** | **0** | **0** | **0** |
 | _**1**_ | _**1**_ | _**1**_ | _**1**_ |
 
 The next set is `3 2`. Increment the first 2 columns, in 3 rows, by 1.
 
-| 0 | 0 | 0 | 0
-|---|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| --- | --- | --- | --- |
 | _**1**_ | _**1**_ | **0** | **0** |
 | _**1**_ | _**1**_ | **0** | **0** |
-| _**2**_ | _**2**_ | **1** | **1** |
+| _**2**_ | _**2**_ | _**1**_ | _**1**_ |
 
 The next set is `4 2`. Increment the first 2 columns, in 4 rows, by 1.
 
-| _1_ | _1_ | 0 | 0
-|---|---|---|---|---|
+| _1_ | _1_ | 0 | 0 |
+| --- | --- | --- | --- |
 | _**2**_ | _**2**_ | **0** | **0** |
 | _**2**_ | _**2**_ | **0** | **0** |
-| _**3**_ | _**3**_ | **1** | **1** |
+| _**3**_ | _**3**_ | _**1**_ | _**1**_ |
 
 After running through each set in the array, calculate how many cells in the grid contain the max value. In this example, `3` is the max value found in `2` cells. The method should return `2`.
 
