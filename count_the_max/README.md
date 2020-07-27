@@ -1,6 +1,8 @@
 # Count the Max
 
-Code Challenge: create a method which parses an array of values and adds counts to cells in a two-dimensional grid. Once the parsing is complete, the method shoould find the total number of cells which contain the max value.
+## The Challenge
+
+Create a method which parses an array of values and adds counts to cells in a two-dimensional grid. Once the parsing is complete, the method shoould find the total number of cells which contain the max value.
 
 For example, the following array contains a set of numbers separated by empty space.
 
@@ -38,6 +40,8 @@ After running through each set in the array, calculate how many cells in the gri
 
 Create a method that parses and array as described and finds the max number of cells with the largest value.
 
+<br>
+
 ## My Solution
 
 ```ruby
@@ -71,7 +75,7 @@ end
 
 ### Running the Code
 
-You can clone the repo and run the file as described below, or you can create a file named `count_the_max.rb`. copy the contents of the code snippet to the file and save. Run the following in the console:
+You can clone the repo and run the file as described below, or you can create a file named `count_the_max.rb`, copy the contents of the code snippet to the file and save. Run the following in the console:
 
 ```sh
 $ ruby count_the_max.rb
