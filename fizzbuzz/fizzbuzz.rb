@@ -14,18 +14,6 @@ def fizzbuzz(n)
 end
 
 class TestFizzBuzz < Test::Unit::TestCase
-  # with_captured_stdout comes from
-  # https://stackoverflow.com/questions/14987362/how-can-i-capture-stdout-to-a-string
-  # Author: fearless_fool
-  def with_captured_stdout
-    original_stdout = $stdout  # capture previous value of $stdout
-    $stdout = StringIO.new     # assign a string buffer to $stdout
-    yield                      # perform the body of the user code
-    $stdout.string             # return the contents of the string buffer
-  ensure
-    $stdout = original_stdout  # restore $stdout to its previous value
-  end
-
   def test_should_return_fizz
     assert_equal 'Fizz', fizz_buzz(3)
   end
@@ -44,6 +32,33 @@ class TestFizzBuzz < Test::Unit::TestCase
 
   def test_fizzbuzz_output
     result = with_captured_stdout { fizzbuzz(15) }.split(/\n+/)
-    assert result.include?('FizzBuzz')
+    assert_equal '1',        result[0]
+    assert_equal '2',        result[1]
+    assert_equal 'Fizz',     result[2]
+    assert_equal '4',        result[3]
+    assert_equal 'Buzz',     result[4]
+    assert_equal 'Fizz',     result[5]
+    assert_equal '7',        result[6]
+    assert_equal '8',        result[7]
+    assert_equal 'Fizz',     result[8]
+    assert_equal 'Buzz',     result[9]
+    assert_equal '11',       result[10]
+    assert_equal 'Fizz',     result[11]
+    assert_equal '13',       result[12]
+    assert_equal '14',       result[13]
+    assert_equal 'FizzBuzz', result[14]
+  end
+
+  private
+
+  # This method comes from, Author: fearless_fool
+  # https://stackoverflow.com/questions/14987362/how-can-i-capture-stdout-to-a-string
+  def with_captured_stdout
+    original_stdout = $stdout # capture previous value of $stdout
+    $stdout = StringIO.new    # assign a string buffer to $stdout
+    yield                     # perform the body of the user code
+    $stdout.string            # return the contents of the string buffer
+  ensure
+    $stdout = original_stdout # restore $stdout to its previous value
   end
 end
