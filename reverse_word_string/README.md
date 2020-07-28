@@ -18,14 +18,12 @@ Requirements:
 require "test/unit"
 
 def reverse_string(input)
-  result = []
-  input.chars.each { |i| result.unshift(i) }
-  result.join('')
+  input.chars.reverse_each.map { |i| i }.join
 end
 
 def reverse_word_string(string)
   array = string.scan(/\w+|\W+/)
-  array.map { |word| reverse_string(word) }.join()
+  array.map { |word| reverse_string(word) }.join
 end
 
 class TestReverseWordString < Test::Unit::TestCase
