@@ -4,7 +4,7 @@
 
 In a range of 1 to 1,000,000, if you were to break up each number, ie 1234, 3456, etc. into separate numbers, then add them, i.e. 1+2+3+4 = 10, how many times would you get 42?
 
-Create a method which calcualtes how many times you will get 42 from suming each number in the of ranging from 1 to 1,000,000, then output the count.
+Create a method which calcualtes how many times you will get 42 from suming each number in the range 1 to 1,000,000, then output the count.
 
 <br>
 
