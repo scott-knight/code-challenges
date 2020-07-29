@@ -1,5 +1,9 @@
 # How Many Times will You Get 42
 
+A simple challange which determines how many times you will get a summed value.
+
+<br>
+
 ## The Challenge
 
 In a range of 1 to 1,000,000, if you were to break up each number, i.e. 1234, 3456, etc., into separate numbers, then add them, i.e. 1+2+3+4 = 10, how many times would you get 42?
