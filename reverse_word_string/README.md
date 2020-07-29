@@ -1,5 +1,9 @@
 # Reverse Word String
 
+A challenge to test your string manipulation skills
+
+<br>
+
 ## The Challenge
 
 Take a string, revese the words in the string but maintain their location in the string, including saving the whitespace.
