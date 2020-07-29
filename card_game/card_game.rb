@@ -54,8 +54,8 @@ class TestCardGame < Test::Unit::TestCase
   end
 
   def test_should_return_player_tie_for_3_players
-    cards = [1, 0, 0, 0, 1, 2, 1, 2, 1, 1, 2, 1]
-    message = 'There was a tie between Players 1, 2, 3 and 4, each winning 1 times'
+    cards = [1, 2, 2, 2, 1, 2, 3, 3, 1, 3, 2, 2]
+    message = 'There was a tie between Players 1, 2 and 3, each winning 2 times'
     assert_equal message, card_game(players: 4, cards: cards)
   end
 end
