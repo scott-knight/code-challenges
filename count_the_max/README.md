@@ -1,6 +1,6 @@
 # Count the Max
 
-Code Challenge: create a method which parses an array of values and adds counts to cells in a two-dimensional grid. Once the parsing is complete, the method shoould find the total number of cells which contain the max value.
+Code Challenge: create a method which parses an array of values and adds counts to cells in a two-dimensional grid. Once the parsing is complete, the method should find the total number of cells which contain the max value.
 
 For example, the following array contains a set of numbers separated by empty space.
 
