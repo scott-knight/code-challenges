@@ -33,7 +33,7 @@ player 1 gets `2`, player 2 gets `1`. **Player 1 wins**.
 
 ## Challenge Notes
 
-The first code test in this challenge only provided 5 integers in the card deck (the array). If I was to pull 2 cards for each round, I was going to be short a card on the 3rd round. I was left to assume that if there weren't any cards left (or there weren't enough cards for each play in the final round), the user(s) who didn't have cards ended up with a `0` for that round.
+The first code test in this challenge only provided 5 integers in the card deck (the array). If I was to pull 2 cards for each round, I was going to be short a card on the 3rd round. I was left to assume that if there weren't any cards left (or there weren't enough cards for each player in the final round), the user(s) who didn't have cards ended up with a `0` for that round.
 
 ## My Solution
 
